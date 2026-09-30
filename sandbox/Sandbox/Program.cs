@@ -1,27 +1,52 @@
 using System;
-
 class Program
 {
-    static void Main(string[] args) // static = function has no class, 
-    // void = function tells compiler no value will be returned
+        static double AddNumbers(double x, int y)
     {
-       int x = 20;
-       int y = 20;
-       
-       if (x == 10)
-       {
-        Console.WriteLine("X is 10");
-        Console.WriteLine("Y is fun");
-       }
+        return x + y;
 
-       else if (x == 20)
-        {
-            Console.WriteLine("We are in an else if.");
-        }
-
-       else
-        {
-            Console.WriteLine("Z is not much fun");
-        }
     }
+
+static void DisplayGreeting(string name)
+    {
+        Console.WriteLine($"Welcome {name}, pleased to meet you.");
+    }
+    static void Main(string[] args)
+    { 
+        DisplayGreeting("Bob");
+        Console.WriteLine(AddNumbers(12.234, 10));
+    }
+    // static = function has no class, 
+    // {
+    // bool done = false;
+    // while (! done)
+    // {
+    //     Console.Write("Are we done (y/n): ");
+    //     done = Console.ReadLine().ToLower() == "y";
+
+    // }
+
+    // bool done;
+    //     do
+    //     {
+    //       Console.Write("Are we done (y/n): ");
+    //       done = Console.ReadLine().ToLower() == "y";
+  
+    //     } while(!done);
+
+    // for(int i = 100; i >= 0; i -= 5)
+    //     {
+    //         Console.WriteLine(i);
+    //     }
+
+    // List<string> myFriends = ["Bob", "Betty", "Bobba"];
+    //         myFriends.Add("James");
+    //         myFriends.Add("John");
+    // foreach(string name in myFriends)
+    //     {
+
+    //         Console.WriteLine(name);
+    //     }
+
+
 }
